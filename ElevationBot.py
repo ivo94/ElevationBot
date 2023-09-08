@@ -2,6 +2,7 @@ import logging
 import requests
 from opencage.geocoder import OpenCageGeocode
 from telegram import Update, KeyboardButton, ReplyKeyboardMarkup
+from variables import TOKEN, OPEN_ELEVATION_API_KEY, GEOCODER_API_KEY, AWAIT_LOCATION
 from telegram.ext import (
     filters,
     MessageHandler,
@@ -11,10 +12,10 @@ from telegram.ext import (
     ConversationHandler,
 )
 
-TOKEN = "6625578717:AAF3uzDQSOXpz_KGNngrb1iSROEdOeVUshM"
+""" TOKEN = "6625578717:AAF3uzDQSOXpz_KGNngrb1iSROEdOeVUshM"
 OPEN_ELEVATION_API_KEY = "https://api.open-elevation.com/api/v1/lookup"
 GEOCODER_API_KEY = "11eff65b16674d259a4e6f4fb3443158"
-AWAIT_LOCATION = 0
+AWAIT_LOCATION = 0 """
 prompt_location_message = """ Tell me the location. You can use an address or a latitude and longitude. 
 Example: 1600 Amphitheatre Parkway, Mountain View, CA
 Example: 27.99 86.92 """
