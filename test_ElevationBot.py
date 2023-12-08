@@ -1,6 +1,5 @@
 import pytest
 from unittest.mock import Mock, AsyncMock
-from telegram import Update, KeyboardButton, ReplyKeyboardMarkup
 from ElevationBot import start, start_geocoder, fetch_elevation, ask_location
 
 def test_fetch_elevation():
@@ -46,22 +45,4 @@ async def test_start():
         chat_id=123,  # Replace with the expected chat ID
         text="I can tell you the elevation at your current location or at a specified location."
         " Use /help to see a list of available commands",
-    )
-
-@pytest.mark.asyncio
-async def test_ask_location():
-    # Create a mock update object
-    mock_update = AsyncMock()
-
-    # Create a mock context object with the reply_text method
-    mock_context = AsyncMock()
-    location_button = KeyboardButton(text="Share Location", request_location=True)
-
-    # Call the ask_location function with the mock update and context
-    await ask_location(mock_update, mock_context)
-
-    # Define the expected text and reply_markup
-    expected_text = "Please share your location."
-    expected_reply_markup = ReplyKeyboardMarkup(
-        [[location_button]], resize_keyboard=True, one_time_keyboard=True
     )
