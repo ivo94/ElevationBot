@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import Mock, AsyncMock
+from unittest.mock import AsyncMock
 from ElevationBot import start, start_geocoder, fetch_elevation, ask_location
 
 def test_fetch_elevation():
