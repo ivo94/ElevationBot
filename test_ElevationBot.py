@@ -65,10 +65,3 @@ async def test_ask_location():
     expected_reply_markup = ReplyKeyboardMarkup(
         [[location_button]], resize_keyboard=True, one_time_keyboard=True
     )
-
-
-
-
-
-
-
