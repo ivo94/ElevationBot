@@ -51,4 +51,4 @@ So far everything we mentioned is in the main file of the project, _ElevationBot
 
 Even though using pytest for testing is always useuful, in this case the most direct way of testing the bot is by far using the bot itself! This was done repeatedly to ensure its correct functioning.
 
-After testing, the bot was deployed using [Heroku](https://heroku.com/), so you can try it out yourselves at [ElevationBot.](https://t.me/MrElevationBot)
+After testing, the bot was deployed using Amazon Web Services, so you can try it out yourselves at [ElevationBot.](https://t.me/MrElevationBot)
